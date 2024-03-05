@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
     <div>
     <img src="img/sh1.jpg" alt="SuperHero" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
     <h1 style="text-align: center;">Encuentra tu SuperHero</h1>
@@ -19,9 +23,17 @@
         <input type="text" id="numero" name="numero"><br>
     </div>
     <div style="margin-top: 10px; text-align: center;">
-        <input type="submit" value="Buscar">
+        <input type="button" value="Buscar" onclick="buscarSuperhero()">
     </div>
-      </form>
+    </form>
     </section>
+
+<div id="respuesta" style="text-align: center; margin-top: 20px;">
+    <span id="resultado">
+
+    </span>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
