@@ -6,10 +6,9 @@
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 
     <div>
     <img src="img/sh1.jpg" alt="SuperHero" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
@@ -23,7 +22,7 @@
         <input type="text" id="numero" name="numero"><br>
     </div>
     <div style="margin-top: 10px; text-align: center;">
-        <input type="button" value="Buscar" onclick="buscarSuperhero()">
+        <input type="button" id="btn" value="Buscar">
     </div>
     </form>
     </section>
@@ -33,7 +32,8 @@
 
     </span>
 </div>
-
-<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+<script defer src="js/JQuery.buscarSuperhero.js"></script>
 </body>
 </html>

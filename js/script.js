@@ -1,5 +1,5 @@
 function buscarSuperhero() {
-    var numeroSuperhero = $('#numero').val();
+    let numeroSuperhero = $('#numero').val();
 
     $.ajax({
         url: 'https://superheroapi.com/api/4905856019427443/' + numeroSuperhero,
@@ -10,8 +10,8 @@ function buscarSuperhero() {
             if (response.response === 'success') {
                 console.log('Full API Response:', response);
 
-                var nombreSuperhero = response.name;
-                var imgURL = response.image.url;
+                const nombreSuperhero = response.name;
+                const imgURL = response.image.url;
 
                 $('#respuesta').html('<p>Nombre del Superhero: ' + nombreSuperhero + '</p>' + '<img src="' + imgURL + '" alt="' + nombreSuperhero + '">');
             } else {
