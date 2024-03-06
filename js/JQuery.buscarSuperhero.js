@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         $.ajax({
             type: 'GET',
-            url: 'https://superheroapi.com/api/4905856019427443/70',
+            url: 'https://superheroapi.com/api.php/4905856019427443/' + numeroSuperhero,
             dataType: "json",
             
             success: function(response) {
